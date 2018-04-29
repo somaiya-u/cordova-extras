@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-extras" version="0.0.1">
+    <name>Device</name>
+    <description>Cordova Extras Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,extras</keywords>
+    <js-module src="www/index.js" name="device">
+        <clobbers target="extras" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Extras">
+                <param name="ios-package" value="CDVExtras"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVExtras.h" />
+        <source-file src="src/ios/CDVExtras.m" />
+    </platform>
+</plugin>
