@@ -37,9 +37,9 @@ channel.waitForInitialization('onCordovaInfoReady');
 function Extras () {
     
 
-    channel.onCordovaReady.subscribe(function () {
+    /* channel.onCordovaReady.subscribe(function () {
        console.log('Cordova is ready from extras plugin');
-    });
+    }); */
 }
 
 /**
@@ -48,10 +48,10 @@ function Extras () {
  * @param {Function} successCallback The function to call when the heading data is available
  * @param {Function} errorCallback The function to call when there is an error getting the heading data. (OPTIONAL)
  */
-Extras.prototype.getInfo = function (successCallback, errorCallback) {
+/* Extras.prototype.getInfo = function (successCallback, errorCallback) {
     argscheck.checkArgs('fF', 'Device.getInfo', arguments);
     exec(successCallback, errorCallback, 'Device', 'getDeviceInfo', []);
-};
+}; */
 
 Extras.prototype.testNative = function (successCallback, errorCallback, params) {    
     exec(successCallback, errorCallback, 'Extras', 'testNative', [params]);
