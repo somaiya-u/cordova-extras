@@ -1,9 +1,9 @@
 /********* Echo.m Cordova Plugin Implementation *******/
 
-#import "Extras.h"
+#import "CDVExtras.h"
 #import <Cordova/CDVPlugin.h>
 
-@implementation Extras
+@implementation CDVExtras
 
 - (void)testNative:(CDVInvokedUrlCommand*)command
 {

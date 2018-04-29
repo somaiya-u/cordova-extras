@@ -2,7 +2,7 @@
 
 #import <Cordova/CDVPlugin.h>
 
-@interface Extras : CDVPlugin
+@interface CDVExtras : CDVPlugin
 
 - (void)testNative:(CDVInvokedUrlCommand*)command;
 
